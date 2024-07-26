@@ -33,7 +33,7 @@ WebUI.waitForElementClickable(findTestObject('Pages/Login page/button_login'), G
 
 WebUI.click(findTestObject('Pages/Login page/button_login'))
 
-WebUI.waitForElementPresent(findTestObject('Pages/Products page/products_header'), GlobalVariable.waitElementTimeout)
+WebUI.verifyElementPresent(findTestObject('Pages/Products page/products_header'), GlobalVariable.waitElementTimeout)
 
 WebUI.closeBrowser()
 
