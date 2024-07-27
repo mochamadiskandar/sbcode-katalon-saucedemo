@@ -1,4 +1,4 @@
-package helper
+package mypack
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -20,12 +20,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class Login {
+public class LoginPage {
 
 	@Keyword
-	def static void loginIntoWeb() {
+
+	def static void loginToWeb() {
+		
 		WebUI.openBrowser('')
+		
 		WebUI.navigateToUrl(GlobalVariable.urlLogin)
-		WebUI.waitForElementPresent(findTestObject('Pages/Login page/login_header'), GlobalVariable.waitPageTimeout)
+		
+		WebUI.waitForPageLoad(GlobalVariable.waitPageTimeout)
+		
+		WebUI.waitForElementPresent(findTestObject('Sauce Demo/Login page/login_header'), GlobalVariable.waitElementTimeout)
+		
+		WebUI.setText(findTestObject('Sauce Demo/Login page/input_username'), GlobalVariable.validUsername)
+		
+		WebUI.setText(findTestObject('Sauce Demo/Login page/input_password'), GlobalVariable.password)
+		
+		WebUI.waitForElementClickable(findTestObject('Sauce Demo/Login page/button_login'), GlobalVariable.waitElementTimeout)
+		
+		WebUI.click(findTestObject('Sauce Demo/Login page/button_login'))
+		
+		WebUI.verifyElementPresent(findTestObject('Sauce Demo/Products page/txt_productsPage_header'), GlobalVariable.waitElementTimeout)
+		
 	}
 }

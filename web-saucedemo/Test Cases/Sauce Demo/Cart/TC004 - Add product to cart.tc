@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>User login with valid username and password</name>
+   <name>TC004 - Add product to cart</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>fbde625b-5a8f-4628-83db-f58c0a9e85c2</testCaseGuid>
+   <testCaseGuid>3ca5be74-5fed-4333-879d-1de9f3feb463</testCaseGuid>
 </TestCaseEntity>

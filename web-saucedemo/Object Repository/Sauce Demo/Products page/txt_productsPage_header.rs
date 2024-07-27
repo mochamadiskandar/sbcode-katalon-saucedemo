@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>products_header</name>
+   <name>txt_productsPage_header</name>
    <tag></tag>
    <elementGuidId>1a65c09f-4819-4d5a-9777-232477d17b5e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

@@ -23,17 +23,17 @@ WebUI.navigateToUrl(GlobalVariable.urlLogin)
 
 WebUI.waitForPageLoad(GlobalVariable.waitPageTimeout)
 
-WebUI.waitForElementPresent(findTestObject('Pages/Login page/login_header'), GlobalVariable.waitElementTimeout)
+WebUI.waitForElementPresent(findTestObject('Sauce Demo/Login page/login_header'), GlobalVariable.waitElementTimeout)
 
-WebUI.setText(findTestObject('Pages/Login page/input_username'), GlobalVariable.validUsername)
+WebUI.setText(findTestObject('Sauce Demo/Login page/input_username'), GlobalVariable.validUsername)
 
-WebUI.setText(findTestObject('Pages/Login page/input_password'), GlobalVariable.password)
+WebUI.setText(findTestObject('Sauce Demo/Login page/input_password'), GlobalVariable.password)
 
-WebUI.waitForElementClickable(findTestObject('Pages/Login page/button_login'), GlobalVariable.waitElementTimeout)
+WebUI.waitForElementClickable(findTestObject('Sauce Demo/Login page/button_login'), GlobalVariable.waitElementTimeout)
 
-WebUI.click(findTestObject('Pages/Login page/button_login'))
+WebUI.click(findTestObject('Sauce Demo/Login page/button_login'))
 
-WebUI.verifyElementPresent(findTestObject('Pages/Products page/products_header'), GlobalVariable.waitElementTimeout)
+WebUI.verifyElementPresent(findTestObject('Sauce Demo/Products page/txt_productsPage_header'), GlobalVariable.waitElementTimeout)
 
 WebUI.closeBrowser()
 
